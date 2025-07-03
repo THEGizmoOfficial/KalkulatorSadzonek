@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator sadzonek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Kalkulator sadzonek</h2>
+
+        <label for="roslina">Rodzaj odmiany:</label>
+        <select id="roslina">
+            <option value="">-- Wybierz odmianę --</option>
+            <option value="amnezja">Amnezja</option>
+            <option value="kush">Kush</option>
+        </select>
+
+        <div id="schematOpcje" style="display: none;">
+            <label for="schemat">Rodzaj uprawy:</label>
+            <select id="schemat" disabled>
+                <option value="">-- Wybierz rodzaj --</option>
+            </select>
+        </div>
+
+        <div id="kalkulatorOpcje" style="display: none;">
+            <label for="ilosc">Ilość:</label>
+            <input type="number" id="ilosc" min="1" max="100" value="1" />
+
+            <button onclick="obliczWartosc()">Oblicz wartość</button>
+
+            <div id="wynik" style="display: none;"></div>
+            <div id="dodatkowe" style="display: none;"></div>
+        </div>
+        <div id="copyright">
+            Copyright 2025 &copy Developed by THEGizmo
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
