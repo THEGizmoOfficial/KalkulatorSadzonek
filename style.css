@@ -57,7 +57,9 @@ button:hover {
 }
 
 #wynik,
-#dodatkowe {
+#dodatkowe,
+#dodatkoweAloes,
+#dodatkoweBorowki {
     background-color: #1d1d1d;
     color: #fff;
     padding: 20px;
